@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="desktop-nav">
+    <div class="logo">Our Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#video-edits">Our Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section__text__p1">Explore Our</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2>Filmmaking</h2>
+          <article><img src="Assets/checkmark.png" class="icon" />Storytelling</article>
+          <article><img src="Assets/checkmark.png" class="icon" />Cinematography</article>
+          <article><img src="Assets/checkmark.png" class="icon" />Lighting</article>
+          <article><img src="Assets/checkmark.png" class="icon" />Directing</article>
+        </div>
+
+        <div class="details-container">
+          <h2>Video Editing</h2>
+          <article><img src="Assets/checkmark.png" class="icon" />Premiere Pro</article>
+          <article><img src="Assets/checkmark.png" class="icon" />After Effects</article>
+          <article><img src="Assets/checkmark.png" class="icon" />DaVinci Resolve</article>
+          <article><img src="Assets/checkmark.png" class="icon" />Motion Graphics</article>
+        </div>
+
+        <!-- NEW EDUCATION BOX -->
+        <div class="details-container">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>Master's Degree in Psychology</h3>
+            <p>Specialized in consumer behavior & media psychology</p>
+          </div>
+          <div class="education-item">
+            <h3>Master's Degree in Marketing Management</h3>
+            <p>Focused on digital marketing & brand strategy</p>
+          </div>
+          <p class="education-note">Combining psychological insight with creative storytelling</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO EDITS SECTION -->
+  <section id="video-edits">
+    <p class="section__text__p1">Our Work</p>
+    <h1 class="title">Video Portfolio</h1>
+    
+    <!-- TYPE FILTER (Video Editing / Filmmaking) -->
+    <div class="filter-buttons type-filter">
+      <button class="type-filter-btn active" data-type-filter="all">All Work</button>
+      <button class="type-filter-btn" data-type-filter="video-editing">Video Editing</button>
+      <button class="type-filter-btn" data-type-filter="filmmaking">Filmmaking</button>
+    </div>
+    
+    <!-- FORMAT FILTER (Short Form / Long Form / Other) -->
+    <div class="filter-buttons format-filter">
+      <button class="format-filter-btn active" data-format-filter="all">All Formats</button>
+      <button class="format-filter-btn" data-format-filter="short">Short Form</button>
+      <button class="format-filter-btn" data-format-filter="long">Long Form</button>
+      <button class="format-filter-btn" data-format-filter="other">Other Work</button>
+    </div>
+
+    <div class="video-grid">
+      <!-- Video 1 - Filmmaking, Long Form -->
+      <div class="video-card" data-type="filmmaking" data-format="long">
+        <a href="https://www.facebook.com/reel/1333659731275539" target="_blank" class="video-link">
+          <div class="video-thumbnail">
+            <img src="Assets/video-1.jpeg" alt="Portrait talking head interview" />
+            <div class="video-overlay">
+              <div class="video-title">Portrait talking head interview</div>
+              <div class="video-meta">
+                <span class="video-type">Filmmaking</span>
+                <span class="video-format">Long Form</span>
+                <span class="video-views">771K Views</span>
+              </div>
+            </div>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video 2 - Filmmaking, Long Form -->
+      <div class="video-card" data-type="filmmaking" data-format="long">
+        <a href="https://www.facebook.com/reel/630051232871569" target="_blank" class="video-link">
+          <div class="video-thumbnail">
+            <img src="Assets/video-2.jpeg" alt="A local historical café & restaurant" />
+            <div class="video-overlay">
+              <div class="video-title">A local historical café & restaurant</div>
+              <div class="video-meta">
+                <span class="video-type">Filmmaking</span>
+                <span class="video-format">Long Form</span>
+                <span class="video-views">221K Views</span>
+              </div>
+            </div>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video 3 - Filmmaking, Long Form -->
+      <div class="video-card" data-type="video-editing" data-format="long">
+        <a href="https://www.youtube.com/watch?v=nD58KXqFtDI" target="_blank" class="video-link">
+          <div class="video-thumbnail">
+            <img src="Assets/video-3.jpeg" alt="Cinematic short action/comedy film" />
+            <div class="video-overlay">
+              <div class="video-title">Cinematic short action/comedy film</div>
+              <div class="video-meta">
+                <span class="video-type">Video Editing</span>
+                <span class="video-format">Long Form</span>
+                <span class="video-views">Client Project</span>
+              </div>
+            </div>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video 4 - Video Editing, Short Form -->
+      <div class="video-card" data-type="video-editing" data-format="short">
+        <a href="https://www.upwork.com/freelancers/~0156d71f4a0889a21e?p=1993350749086425088" target="_blank" class="video-link">
+          <div class="video-thumbnail">
+            <img src="Assets/CCK.jpeg" alt="Cinematic trailer CCK" />
+            <div class="video-overlay">
+              <div class="video-title">Cinematic trailer CCK</div>
+              <div class="video-meta">
+                <span class="video-type">Video Editing</span>
+                <span class="video-format">Short Form</span>
+                <span class="video-views">Client Project</span>
+              </div>
+            </div>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video 5 - Video Editing, Other Work -->
+      <div class="video-card" data-type="video-editing" data-format="other">
+        <a href="https://www.upwork.com/freelancers/~0156d71f4a0889a21e?p=1993345436411858944" target="_blank" class="video-link">
+          <div class="video-thumbnail">
+            <img src="Assets/mAC.jpeg" alt="Macbook M1 Pro Ad" />
+            <div class="video-overlay">
+              <div class="video-title">Macbook M1 Pro Ad</div>
+              <div class="video-meta">
+                <span class="video-type">Video Editing</span>
+                <span class="video-format">Advertisement</span>
+                <span class="video-views">Personal Work</span>
+              </div>
+            </div>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video 6 - Filmmaking, Long Form -->
+      <div class="video-card" data-type="filmmaking" data-format="long">
+        <a href="https://www.instagram.com/p/DF-hQnIKEDk" target="_blank" class="video-link">
+          <div class="video-thumbnail">
+            <img src="Assets/dakhama.jpeg" alt="Podcast interviews with local celebrities" />
+            <div class="video-overlay">
+              <div class="video-title">Podcast interviews with local celebrities</div>
+              <div class="video-meta">
+                <span class="video-type">Filmmaking</span>
+                <span class="video-format">Long Form</span>
+                <span class="video-views">151K Views</span>
+              </div>
+            </div>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Video 7 - Video Editing, Long Form -->
+      <div class="video-card" data-type="video-editing" data-format="long">
+        <a href="https://www.upwork.com/freelancers/~0156d71f4a0889a21e?p=1993393667420676096" target="_blank" class="video-link">
+          <div class="video-thumbnail">
+            <img src="Assets/Can food.jpeg" alt="CanFood food contest" />
+            <div class="video-overlay">
+              <div class="video-title">CanFood food contest</div>
+              <div class="video-meta">
+                <span class="video-type">Video Editing</span>
+                <span class="video-format">Long Form</span>
+                <span class="video-views">Client Project</span>
+              </div>
+            </div>
+            <div class="play-icon">▶</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="Assets/email.png" class="icon" />
+        <p>sansalamine23@gmail.com <br> <br>
+          niaf.smail@gmail.com
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="Assets/phone-call.png" class="icon" />
+        <p>English: +213792374697 <br> <br>
+          French : +213797666832
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Our Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
